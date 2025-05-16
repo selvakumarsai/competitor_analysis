@@ -14,8 +14,8 @@ from langchain_core.messages import SystemMessage, HumanMessage
 # ---------------------------------
 
 # Load API keys from Streamlit secrets or environment
-OPENAI_API_KEY = st.secrets("OPENAI_API_KEY")
-GOOGLE_API_KEY = st.secrets("GOOGLE_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 if not OPENAI_API_KEY:
     st.error("🔑 OpenAI API key not found. Set OPENAI_API_KEY in Streamlit secrets or environment.")
