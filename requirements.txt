@@ -1,0 +1,6 @@
+os
+requests
+streamlit
+typing 
+langchain_openai 
+langchain_core.messages
