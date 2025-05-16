@@ -14,13 +14,6 @@ from langchain_core.messages import SystemMessage, HumanMessage
 OPENAI_API_KEY = st.secrets["OPENAIAPI_KEY"]
 GOOGLE_API_KEY = st.secrets["GOOGLEAPI_KEY"]
 
-if not OPENAI_API_KEY:
-    st.error("🔑 OpenAI API key not found. Set OPENAI_API_KEY in Streamlit secrets or environment.")
-    st.stop()
-if not GOOGLE_API_KEY:
-    st.error("🔑 Google API key not found. Set GOOGLE_API_KEY in Streamlit secrets or environment.")
-    st.stop()
-
 # Initialize the language model
 llm = ChatOpenAI(
     model_name="gpt-4", 
