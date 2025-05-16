@@ -9,15 +9,6 @@ from typing import List, Dict
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
-# ---------------------------------
-# Configuration: API Keys
-# ---------------------------------
-
-load_dotenv()
-
-# Access the API key from the environment
-#api_key = os.getenv("GOOGLE_GEN_API")
-api_key = st.secrets["gemini_apikey"]
 
 # Load API keys from Streamlit secrets or environment
 OPENAI_API_KEY = st.secrets["OPENAIAPI_KEY"]
