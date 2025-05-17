@@ -79,7 +79,7 @@ def main():
     st.markdown(
         """
         This app helps business owners, marketing teams, analysts, and investors
-        analyze nearby clothing store competitors by location, providing insights
+        analyze nearby  competitors by location, providing insights
         on peak hours, footfall trends, and strategic recommendations.
         """
     )
@@ -92,7 +92,7 @@ def main():
     run_query = st.sidebar.button("Generate Report")
 
     if not location:
-        st.info("Please enter a location to begin analysis.")
+        st.info("Please enter a location and type of Business to begin analysis.")
         return
 
     if run_query:
