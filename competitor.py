@@ -1,7 +1,3 @@
-# streamlit_competitor_insights_app.py
-# ====================================
-# Streamlit application for AI-powered competitor insights for clothing stores
-
 import os
 import requests
 import streamlit as st
