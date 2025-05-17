@@ -74,7 +74,7 @@ def generate_insights(prompt: str) -> str:
 
 def main():
     st.set_page_config(page_title="Competitor Insights", layout="wide")
-    st.title("📊 AI-Powered Competitor Insights for Clothing Retail")
+    st.title("📊 AI-Powered Competitor Insights for your Business")
 
     st.markdown(
         """
