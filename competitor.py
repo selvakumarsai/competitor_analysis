@@ -6,20 +6,17 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
 
-# Load API keys from Streamlit secrets or environment
+
 OPENAI_API_KEY = st.secrets["OPENAIAPI_KEY"]
 GOOGLE_API_KEY = st.secrets["GOOGLEAPI_KEY"]
 
-# Initialize the language model
 llm = ChatOpenAI(
     model_name="gpt-4", 
     temperature=0.7,
     openai_api_key=OPENAI_API_KEY
 )
 
-# ---------------------------------
-# Helper functions
-# ---------------------------------
+
 
 def search_competitors(location: str, radius_km: float, store_type: str) -> List[Dict]:
     """
