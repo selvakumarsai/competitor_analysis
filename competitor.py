@@ -33,7 +33,7 @@ def search_competitors(location: str, radius_km: float, store_type: str) -> List
     return response.json().get("results", [])
 
 
-def format_prompt(location: str, store_type: str competitors: List[Dict]) -> str:
+def format_prompt(location: str, store_type: str, competitors: List[Dict]) -> str:
     """
     Create a prompt for the LLM based on competitor data.
     """
