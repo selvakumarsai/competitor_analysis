@@ -47,7 +47,7 @@ def format_prompt(location: str, competitors: List[Dict]) -> str:
         lines.append(f"{name} — {addr} | Rating: {rating}")
     summary = "\n".join(lines)
     prompt = (
-        f"You are a retail market strategist. Analyze the following clothing stores in {location}:\n\n"
+        f"You are a {store_type} market strategist. Analyze the following {store_type} in {location}:\n\n"
         f"{summary}\n\n"
         "Provide:\n"
         "- Estimated peak customer footfall hours\n"
